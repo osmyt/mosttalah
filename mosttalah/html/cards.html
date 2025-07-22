@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>المصطلح</title>
+    <script src="../js/cards-data.js" defer></script>
+    <script src="../js/cards-page.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn">
+                    <i class="fa-solid fa-house"></i>
+                    <span>الرئيسية</span>
+                </a>
+                <a href="../html/cards.html" class="nav-btn cards-btn active">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>جميع المصطلحات</span>
+                </a>
+                <a href="index.html#footer" class="nav-btn suggest-btn">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>اقتراح</span>
+                </a>
+                <a href="index.html#goal" class="nav-btn about-btn">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>عن الموقع</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cards-page-container">
+        <!-- Sidebar with tags -->
+        <aside class="tags-sidebar">
+            <button class="close-sidebar-btn" style="display:none;position:absolute;top:10px;left:10px;z-index:1100;background:none;border:none;font-size:2rem;color:#2bb686;cursor:pointer;">
+                <i class="fa-solid fa-times"></i>
+            </button>
+            <div class="sidebar-header">
+                <h3>التصنيفات</h3>
+            </div>
+            <div class="tags-list">
+                <!-- Tags will be populated by JavaScript -->
+            </div>
+        </aside>
+
+        <!-- Main content area -->
+        <main class="cards-main-content">
+            <!-- Search section -->
+            <div class="cards-search-section">
+                <div class="search-wrapper">
+                    <input type="text" placeholder="بحث في جميع المصطلحات..." class="cards-search-input">
+                    <i class="fa-solid fa-magnifying-glass search-icon-cards"></i>
+                    <i class="fa-solid fa-times clear-search-icon" style="display: none;"></i>
+                </div>
+                <button class="clear-filters-btn">
+                    <i class="fa-solid fa-times"></i>
+                    مسح الفلاتر
+                </button>
+                <button class="toggle-filters-btn" style="display:none; margin-top:10px;">
+                    <i class="fa-solid fa-sliders-h"></i>
+                    عرض التصنيفات
+                </button>
+                <div class="search-stats">
+                    <span class="results-count">عرض جميع المصطلحات</span>
+                </div>
+            </div>
+
+            <!-- Cards grid -->
+            <div class="cardsGrid">
+                <!-- Cards will be loaded here -->
+            </div>
+
+            <!-- Loading indicator -->
+            <div class="loading-indicator" style="display: none;">
+                <i class="fa-solid fa-spinner fa-spin"></i>
+                <span>جاري تحميل المزيد...</span>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footerSec" id="footer">
+        <div class="footerContainer">
+            <div class="footerContent">
+                <div class="footerLogo">
+                    <h2>المصطلح</h2>
+                    <p>اسس هذا الموقع من قبل بعض الشباب العرب المحبون للغتهم ابتغاء احياء استخدامها في العلوم كما كانت في عصورها الذهبية عندما كانت محل فخر للعرب.</p>
+                </div>
+                <div class="footerLinks">
+                    <h3>روابط سريعة</h3>
+                    <a href="index.html"><i class="fa-solid fa-house"></i> الرئيسية</a>
+                    <a href="../html/cards.html"><i class="fa-solid fa-layer-group"></i> جميع المصطلحات</a>
+                    <a href="index.html#footer"><i class="fa-solid fa-lightbulb"></i> اقتراح</a>
+                    <a href="index.html#goal"><i class="fa-solid fa-circle-info"></i> عن الموقع</a>
+                </div>
+                <div class="footerContact">
+                    <h3>تواصل معنا</h3>
+                    <p class="contact-intro">يمكنك اقتراح معانٍ اخرى عن طريق مواقع التواصل التالية:</p>
+                    <a href="#"><i class="fa-brands fa-telegram"></i> تيليجرام</a>
+                    <a href="#"><i class="fa-brands fa-discord"></i> ديسكورد</a>
+                    <span style="color: #fff;"><i class="fa-solid fa-envelope" style="color: #fff;"></i> mosttalah@gmail.com</span>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>&copy; 2024 المصطلح. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
